@@ -6,7 +6,7 @@ pipeline {
       stage('Build') {
          steps {
             // Get some code from a GitHub repository
-            git 'https://github.com/BenjaminBoutrois/projet_multimodules.git'
+            git 'https://github.com/ahmadlo/projet_multimodules.git'
  withMaven(maven: 'maven') {
             // Run Maven on a Unix agent.
             sh "mvn clean package"
